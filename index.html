@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmbuy</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+        
+        @keyframes animatedBg {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        body {
+            background: linear-gradient(-45deg, #e0f7fa, #a7ffeb, #81c784, #66bb6a);
+            background-size: 400% 400%;
+            animation: animatedBg 10s ease infinite;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+       
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            border: 5px solid #008000;
+            width: 350px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .container::before {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            border: 3px dashed #32CD32;
+            border-radius: 15px;
+            animation: borderAnimation 6s infinite linear;
+        }
+
+        @keyframes borderAnimation {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+    }
+        .logo-container img {
+            max-width: 150px;
+            border: 3px solid #006400;
+            border-radius: 10px;
+            padding: 5px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .logo-container img:hover {
+            transform: scale(1.1);
+        }
+
+
+        .farmbuy-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            color: #006400;
+            margin-top: 15px;
+            border-top: 3px solid #008000;
+            padding-top: 10px;
+            display: inline-block;
+            width: 80%;
+        }
+        .floating-effect {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            animation: float 6s infinite alternate ease-in-out;
+        }
+
+        .floating1 { top: 10%; left: 10%; }
+        .floating2 { top: 60%; right: 15%; animation-delay: 2s; }
+        .floating3 { bottom: 10%; left: 50%; animation-delay: 4s; }
+
+        @keyframes float {
+            from { transform: translateY(0) scale(1); }
+            to { transform: translateY(20px) scale(1.1); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo-container">
+            <img src="farmbuyicon.jpg" alt="Farmbuy Logo">
+        </div>
+        <h2 class="farmbuy-title">FARMBUY</h2>
+    </div>
+
+    <!-- Floating Glow Elements -->
+    <div class="floating-effect floating1"></div>
+    <div class="floating-effect floating2"></div>
+    <div class="floating-effect floating3"></div>
+  <script>
+        setTimeout(function() {
+            window.location.href = "login.html";
+        }, 1600); 
+    </script>
+</head>
+</body>
+</html>

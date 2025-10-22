@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex; /* Fixed typo */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(brr.jpg) no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.wrapper {
+  width: 420px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.wrapper h1 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-left: 5px solid #4CAF50;
+  padding-left: 10px;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 15px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #4CAF50;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input-box input:focus {
+  box-shadow: 0 0 8px #4CAF50;
+}
+
+.input-box input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.input-box i {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  color: #4CAF50;
+  font-size: 18px;
+}
+
+.remember-forgot {
+  display: flex; /* Fixed typo */
+  justify-content: space-between;
+  font-size: 14px;
+  margin: 10px 0 20px;
+}
+
+.remember-forgot label input {
+  accent-color: #4CAF50;
+  margin-right: 5px;
+}
+
+.remember-forgot a {
+  color: #4CAF50;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 12px 20px;
+  background: linear-gradient(to right, #4CAF50, #2c3e50);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(to right, #2c3e50, #4CAF50);
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.register-link a {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
